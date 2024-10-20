@@ -1,0 +1,46 @@
+/* Style for the entire body of the document */
+body {
+    font-family: Arial, sans-serif; /* Set the font for the text */
+    margin: 20px; /* Add a margin around the body for spacing */
+}
+
+/* Style for the main heading (h1) */
+h1 {
+    color: #2c3e50; /* Set the text color for the heading */
+}
+
+/* Style for the sections containing user and chore input */
+#add-user-section, #chore-section {
+    margin-bottom: 20px; /* Add space below each section */
+}
+
+/* Style for buttons */
+button {
+    padding: 5px 10px; /* Add padding for button size */
+    background-color: #3498db; /* Set the background color of the button */
+    color: white; /* Set the text color of the button */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Style for button hover effect */
+button:hover {
+    background-color: #2980b9; /* Change background color when the button is hovered */
+}
+
+/* Style for unordered lists (ul) */
+ul {
+    list-style-type: none; /* Remove default bullet points from the list */
+    padding: 0; /* Remove padding around the list */
+}
+
+/* Style for list items (li) */
+li {
+    padding: 5px; /* Add padding inside each list item */
+    border-bottom: 1px solid #ccc; /* Add a light grey border at the bottom of each item */
+}
+
+/* Style for dropdown select elements */
+select {
+    padding: 5px; /* Add padding inside the select dropdown */
+}
