@@ -12,7 +12,11 @@ document.getElementById('add-user-btn').addEventListener('click', function () {
         updateUserSelect();
         document.getElementById('user-name').value = ''; // Clear input field
     } else {
-        alert('Please enter a valid user name');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter a valid user name!',
+        });
     }
 });
 
@@ -54,7 +58,11 @@ document.getElementById('assign-chore-btn').addEventListener('click', function (
         updateChoreList();
         document.getElementById('chore-name').value = ''; // Clear input field
     } else {
-        alert('Please enter a valid chore name');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter a valid chore name!',
+        });
     }
 });
 
@@ -105,6 +113,22 @@ function deleteChore(index) {
     localStorage.setItem('chores', JSON.stringify(chores)); // Save to local storage
     updateChoreList();
 }
+
+// Initialize SortableJS for drag-and-drop chore reordering
+new Sortable(document.getElementById('chore-list'), {
+    animation: 150,
+    onEnd: function (event) {
+        // Rearrange the chores array based on new order
+        const itemEl = event.item;
+        const oldIndex = event.oldIndex;
+        const newIndex = event.newIndex;
+        
+        const movedChore = chores.splice(oldIndex, 1)[0]; // Remove chore from old position
+        chores.splice(newIndex, 0, movedChore); // Insert chore into new position
+        
+        localStorage.setItem('chores', JSON.stringify(chores)); // Update local storage
+    }
+});
 
 // Initialize app
 updateUserList();
