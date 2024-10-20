@@ -1,28 +1,30 @@
 /* Global Style */
 body {
-    font-family: 'Roboto', sans-serif; /* Professional font */
-    background-color: #f5f7fa; /* Subtle gray background */
-    color: #2c3e50; /* Darker gray for text */
+    font-family: 'Roboto', sans-serif; /* Clean, professional font */
+    background-color: #f0f0f0; /* Very light gray for a clean background */
+    color: #333333; /* Dark gray for text to ensure readability */
     margin: 0;
     padding: 0;
 }
 
+/* Main Heading */
 h1 {
-    color: #2980b9;
+    color: #444444; /* Slightly darker gray for heading */
     text-align: center;
     padding: 20px 0;
-    font-weight: 400;
-    border-bottom: 2px solid #ecf0f1;
+    font-weight: 500; /* Slightly heavier for emphasis */
+    border-bottom: 2px solid #d9d9d9; /* Subtle bottom border */
 }
 
+/* Container Styling */
 #container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px; /* Max width to make it more compact */
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for a subtle effect */
+    border-radius: 12px; /* Slightly larger rounding for modern look */
 }
 
 /* Section Styling */
@@ -31,69 +33,93 @@ section {
 }
 
 h2 {
-    color: #34495e;
-    border-bottom: 2px solid #bdc3c7;
-    padding-bottom: 10px;
-    font-size: 1.5em;
+    color: #555555; /* Medium gray for section headings */
+    border-bottom: 1px solid #d9d9d9; /* Light gray border */
+    padding-bottom: 8px;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
+/* Input Fields & Dropdown */
 input[type="text"], select {
     width: 100%;
-    padding: 10px;
+    max-width: 400px; /* Reduced width to avoid overflow */
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #bdc3c7;
-    border-radius: 4px;
+    border: 1px solid #cccccc; /* Neutral gray border */
+    border-radius: 6px; /* Softer rounding for inputs */
+    background-color: #f9f9f9; /* Light gray for input background */
     font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+input[type="text"]:focus, select:focus {
+    border-color: #888888; /* Darker border on focus */
+    background-color: #ffffff; /* White background on focus */
+    outline: none; /* Remove the default blue outline */
+}
+
+/* Button Styling */
 button {
-    padding: 10px 20px;
-    background-color: #2980b9;
+    padding: 12px 20px;
+    background-color: #555555; /* Neutral dark gray */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #1f6399;
+    background-color: #333333; /* Darker gray on hover */
 }
 
+/* List Styling */
 ul {
     list-style: none;
     padding: 0;
 }
 
 li {
-    padding: 10px;
-    background-color: #ecf0f1;
+    padding: 12px;
+    background-color: #f9f9f9; /* Slight gray for list item background */
     margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight shadow for list items */
 }
 
 .completed {
     text-decoration: line-through;
-    color: #95a5a6;
+    color: #999999; /* Light gray for completed items */
 }
 
+/* Buttons inside the list */
 button.complete-btn {
-    background-color: #2ecc71;
+    background-color: #28a745; /* Green for completion */
     margin-left: 10px;
 }
 
 button.complete-btn:hover {
-    background-color: #27ae60;
+    background-color: #218838; /* Darker green on hover */
 }
 
 button.delete-btn {
-    background-color: #e74c3c;
+    background-color: #dc3545; /* Red for delete */
 }
 
 button.delete-btn:hover {
-    background-color: #c0392b;
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Footer style (optional addition) */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #888888; /* Subtle gray for the footer */
+    font-size: 0.9em;
 }
