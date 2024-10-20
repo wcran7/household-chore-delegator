@@ -1,46 +1,99 @@
-/* Style for the entire body of the document */
+/* Global Style */
 body {
-    font-family: Arial, sans-serif; /* Set the font for the text */
-    margin: 20px; /* Add a margin around the body for spacing */
+    font-family: 'Roboto', sans-serif; /* Professional font */
+    background-color: #f5f7fa; /* Subtle gray background */
+    color: #2c3e50; /* Darker gray for text */
+    margin: 0;
+    padding: 0;
 }
 
-/* Style for the main heading (h1) */
 h1 {
-    color: #2c3e50; /* Set the text color for the heading */
+    color: #2980b9;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 400;
+    border-bottom: 2px solid #ecf0f1;
 }
 
-/* Style for the sections containing user and chore input */
-#add-user-section, #chore-section {
-    margin-bottom: 20px; /* Add space below each section */
+#container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Style for buttons */
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
 button {
-    padding: 5px 10px; /* Add padding for button size */
-    background-color: #3498db; /* Set the background color of the button */
-    color: white; /* Set the text color of the button */
-    border: none; /* Remove the default border */
-    cursor: pointer; /* Change the cursor to a pointer on hover */
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Style for button hover effect */
 button:hover {
-    background-color: #2980b9; /* Change background color when the button is hovered */
+    background-color: #1f6399;
 }
 
-/* Style for unordered lists (ul) */
 ul {
-    list-style-type: none; /* Remove default bullet points from the list */
-    padding: 0; /* Remove padding around the list */
+    list-style: none;
+    padding: 0;
 }
 
-/* Style for list items (li) */
 li {
-    padding: 5px; /* Add padding inside each list item */
-    border-bottom: 1px solid #ccc; /* Add a light grey border at the bottom of each item */
+    padding: 10px;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style for dropdown select elements */
-select {
-    padding: 5px; /* Add padding inside the select dropdown */
+.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+button.complete-btn {
+    background-color: #2ecc71;
+    margin-left: 10px;
+}
+
+button.complete-btn:hover {
+    background-color: #27ae60;
+}
+
+button.delete-btn {
+    background-color: #e74c3c;
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b;
 }

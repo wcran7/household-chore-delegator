@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Set the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
-    <title>Household Chore Delegator</title> <!-- Title of the webpage displayed in the browser tab -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Chore Delegator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Household Chore Delegator</h1> <!-- Main heading of the application -->
+    <div id="container">
+        <h1>Household Chore Delegator</h1>
 
-    <!-- Section for adding a user -->
-    <div id="add-user-section">
-        <input type="text" id="user-name" placeholder="Enter User Name" /> <!-- Input field for user names -->
-        <button id="add-user-btn">Add User</button> <!-- Button to add the user -->
+        <!-- Section for adding a user -->
+        <section id="add-user-section">
+            <h2>Add User</h2>
+            <input type="text" id="user-name" placeholder="Enter User Name" />
+            <button id="add-user-btn">Add User</button>
+        </section>
+
+        <!-- Section for displaying the list of users -->
+        <section id="user-list-section">
+            <h2>Users</h2>
+            <ul id="user-list"></ul>
+        </section>
+
+        <!-- Section for assigning chores -->
+        <section id="chore-section">
+            <h2>Assign Chores</h2>
+            <input type="text" id="chore-name" placeholder="Enter Chore Name" />
+            <select id="user-select"></select>
+            <button id="assign-chore-btn">Assign Chore</button>
+        </section>
+
+        <!-- Section for displaying the list of chores -->
+        <section id="chore-list-section">
+            <h2>Chore List</h2>
+            <ul id="chore-list"></ul>
+        </section>
     </div>
 
-    <!-- Section for displaying the list of users -->
-    <div id="user-list-section">
-        <h2>Users</h2> <!-- Subheading for the user list section -->
-        <ul id="user-list"></ul> <!-- Unordered list to display the added users -->
-    </div>
-
-    <!-- Section for assigning chores -->
-    <div id="chore-section">
-        <h2>Assign Chores</h2> <!-- Subheading for the chore assignment section -->
-        <input type="text" id="chore-name" placeholder="Enter Chore Name" /> <!-- Input field for chore names -->
-        <select id="user-select"></select> <!-- Dropdown to select a user for the chore -->
-        <button id="assign-chore-btn">Assign Chore</button> <!-- Button to assign the chore -->
-    </div>
-
-    <!-- Section for displaying the list of chores -->
-    <div id="chore-list-section">
-        <h2>Chore List</h2> <!-- Subheading for the chore list section -->
-        <ul id="chore-list"></ul> <!-- Unordered list to display the assigned chores -->
-    </div>
-
-    <script src="script.js"></script> <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
 </body>
 </html>
