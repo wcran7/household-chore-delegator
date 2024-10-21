@@ -5,44 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Household Chore Delegator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script> <!-- SortableJS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div id="container">
         <h1>Household Chore Delegator</h1>
 
-        <!-- Section for adding a user -->
-        <section id="add-user-section">
-            <h2>Add User</h2>
-            <input type="text" id="user-name" placeholder="Enter User Name" />
-            <button id="add-user-btn">Add User</button>
-        </section>
+        <!-- Navigation buttons to switch between views -->
+        <div id="nav-buttons">
+            <button id="viewChores" onclick="window.location.href='chore-list.html'">Chore List</button>
+        </div>
 
-        <!-- Section for displaying the list of users -->
-        <section id="user-list-section">
-            <h2>Users</h2>
-            <ul id="user-list"></ul>
-        </section>
+        <!-- User Management & Chore Assignment View -->
+        <section id="assign-view" class="active">
+            <!-- Section for adding a user -->
+            <section id="add-user-section">
+                <h2>Add User</h2>
+                <input type="text" id="user-name" placeholder="Enter User Name" />
+                <button id="add-user-btn">Add User</button>
+            </section>
 
-        <!-- Section for assigning chores -->
-        <section id="chore-section">
-            <h2>Assign Chores</h2>
-            <input type="text" id="chore-name" placeholder="Enter Chore Name" />
-            <select id="user-select"></select>
-            <select id="priority-select">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
-            <input type="date" id="due-date" />
-            <button id="assign-chore-btn">Assign Chore</button>
-        </section>
+            <!-- Section for displaying the list of users -->
+            <section id="user-list-section">
+                <h2>Users</h2>
+                <ul id="user-list"></ul>
+            </section>
 
-        <!-- Section for displaying the list of chores -->
-        <section id="chore-list-section">
-            <h2>Chore List</h2>
-            <ul id="chore-list"></ul>
+            <!-- Section for assigning chores -->
+            <section id="chore-section">
+                <h2>Assign Chores</h2>
+                <input type="text" id="chore-name" placeholder="Enter Chore Name" />
+                <select id="user-select"></select>
+                <select id="priority-select">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="date" id="due-date" />
+                <button id="assign-chore-btn">Assign Chore</button>
+            </section>
         </section>
     </div>
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script> <!-- SortableJS -->
+</head>
+<body>
+    <div id="container">
+        <h1>Chore List</h1>
+
+         <!-- Navigation buttons to switch between views -->
+         <div id="nav-buttons">
+            <button id="viewAssign" onclick="window.location.href='index.html'">Assign Chores</button>
+        </div>
+
+        <ul id="chore-list"></ul>
+        <button id="back-btn">Back to Assign Chores</button>
+    </div>
+
+    <script src="chore-list.js"></script>
+</body>
+</html>
