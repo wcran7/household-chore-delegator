@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Household Chore Delegator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script> <!-- SortableJS -->
 </head>
 <body>
     <div id="container">
@@ -28,6 +30,12 @@
             <h2>Assign Chores</h2>
             <input type="text" id="chore-name" placeholder="Enter Chore Name" />
             <select id="user-select"></select>
+            <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="date" id="due-date" />
             <button id="assign-chore-btn">Assign Chore</button>
         </section>
 

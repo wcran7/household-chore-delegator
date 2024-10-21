@@ -116,6 +116,18 @@ button.delete-btn:hover {
     background-color: #c82333; /* Darker red on hover */
 }
 
+.priority-low {
+    color: green;
+}
+
+.priority-medium {
+    color: orange;
+}
+
+.priority-high {
+    color: red;
+}
+
 /* Footer style (optional addition) */
 footer {
     text-align: center;
